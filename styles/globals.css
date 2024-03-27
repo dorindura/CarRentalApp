@@ -16,22 +16,41 @@ body {
 /* Navbar Styles */
 
 .input-search-div {
-  border: 1px solid #C3D4E9;
+  border: 1px solid #c3d4e9;
+}
+
+.height-100 {
+  height: 100vh;
+}
+
+.width-100 {
+  width: 100vw;
+}
+
+.navbar-bg-color {
+  background-color: #54a6ff;
+  overflow: visible;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
 }
 
 .cover-navbar-icons {
   width: 44px;
   height: 44px;
-  border: 1px solid #C3D4E9;
+  border: 1px solid #c3d4e9;
 }
 
 input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
   height: 24px;
   width: 24px;
-  margin-left: .4em;
+  margin-left: 0.4em;
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23777'><path d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'/></svg>");
   cursor: pointer;
+}
+
+input[type="search"]::placeholder {
+  color: #000;
 }
 
 /* Container Styles */
@@ -39,7 +58,7 @@ input[type="search"]::-webkit-search-cancel-button {
 /* First Section Container */
 
 .bg-photo-light-blue {
-  background-image: url('../images/containerFirstSection/firstSectionImages/left-side-cover.png');
+  background-image: url("../images/containerFirstSection/firstSectionImages/left-side-cover.png");
 }
 
 .cards-first-section {
@@ -47,7 +66,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .bg-photo-dark-blue {
-  background-image: url('../images/containerFirstSection/firstSectionImages/right-side-cover.png');
+  background-image: url("../images/containerFirstSection/firstSectionImages/right-side-cover.png");
 }
 
 .width-h2-f-section-cards {
@@ -57,17 +76,14 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .width-p-f-section-cards {
   width: 282px;
-  height: 50px
+  height: 50px;
 }
 
 /* SecondSectionContainer Styles */
 
 .horizontal-line-second-sec {
   height: auto;
-  border: 1px solid #C3D4E9;
-}
-
-#button-second-section-container {
+  border: 1px solid #c3d4e9;
 }
 
 /* ThirdSectionContainer Styles */
@@ -89,7 +105,7 @@ input[type="search"]::-webkit-search-cancel-button {
 /* Footer Styles */
 
 .color-for-footer-paragraph {
-  color: #13131399; 
+  color: #13131399;
 }
 
 .width-left-side-footer {
@@ -99,12 +115,18 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .width-right-side-footer {
   width: 150px;
-  height: 240px
+  height: 240px;
 }
 
 @media only screen and (max-width: 1150px) {
   .cards-first-section {
     width: 450px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .border-1px-solid-menu {
+    border: 1px solid #1a37a7;
   }
 }
 
@@ -115,5 +137,19 @@ input[type="search"]::-webkit-search-cancel-button {
 
   .width-left-side-footer {
     max-width: 200px;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .horizontal-line-second-sec {
+    justify-content: center;
+    margin: auto;
+    height: auto;
+    border: 1px solid #c3d4e9;
+    width: 140px;
+  }
+
+  .brake-visible {
+    visibility: hidden;
   }
 }

@@ -225,15 +225,19 @@ const ThirdSectionContainer: FC<ThirdSectionContainerProps> = () => {
 
   return (
     <div className="py-8 flex flex-col">
-      <div className="flex flex-row px-4 justify-between">
+      <div className="flex flex-row px-4 justify-between sm:justify-center sm:gap-4">
         <div>
-          <button className="text-grey-for-cards font-semibold">Popular Car</button>
+          <button className="text-grey-for-cards font-semibold">
+            Popular Car
+          </button>
         </div>
         <div>
-          <button className="text-dark-blue-first-section-cards font-semibold">View All</button>
+          <button className="text-dark-blue-first-section-cards font-semibold">
+            View All
+          </button>
         </div>
       </div>
-      <div className="flex flex-wrap gap-for-cards items-center justify-between mt-8 sm:flex-col">
+      <div className="flex flex-wrap gap-for-cards items-center justify-between mt-8 sm:flex-col sm1:flex-col">
         {mockDataForMapping.map((item) => {
           return (
             <CardForThirdSection
@@ -257,7 +261,11 @@ const ThirdSectionContainer: FC<ThirdSectionContainerProps> = () => {
           );
         })}
       </div>
-      <div className="flex items-center justify-center pt-16"><button className="bg-dark-blue-first-section-cards py-2 px-4 text-white text-lg rounded-lg">Show more car</button></div>
+      <div className="flex items-center justify-center pt-16">
+        <button className="bg-dark-blue-first-section-cards py-2 px-4 text-white text-lg rounded-lg">
+          Show more car
+        </button>
+      </div>
     </div>
   );
 };

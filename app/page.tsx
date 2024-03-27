@@ -9,8 +9,10 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col mx-12">
       <title>Rent The Best Cars</title>
-      <div className="py-4"><Navbar/></div>
+      <div className="sticky top-0 navbar-bg-color">
+      <div className="py-4 px-8"><Navbar/></div>
       <hr />
+      </div>
       <div><Container/></div>
       {/* <div><DetailsContainer/></div> */}
       <Footer/>
