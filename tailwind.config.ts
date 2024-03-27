@@ -25,6 +25,10 @@ const config: Config = {
     screens: {
       "xl": {"max": "1240px"},
       "lg": {"max": "1150px"},
+      "lg|sm" : {"max": "900px"},
+      "lg-sm" : {"min": "901px"},
+      "sm2": {"max": "770px"},
+      "sm1": {"max": "730px"},
       "sm": {"max": "720px"},
     }
   },
